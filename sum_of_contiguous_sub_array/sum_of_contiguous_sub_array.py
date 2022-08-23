@@ -21,16 +21,16 @@ Output: 23
 """
 
 
-nums = [-2,1,-3,4,-1,2,1,-5,4]
+nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
 
 max_sum = nums[0]
 curr_sum = 0
 for i in range(len(nums)):
     curr_sum += nums[i]
     if curr_sum < 0:
-        max_sum = max(max_sum,curr_sum)
+        max_sum = max(max_sum, curr_sum)
         curr_sum = 0
     else:
-        max_sum = max(max_sum,curr_sum)
+        max_sum = max(max_sum, curr_sum)
 
 print(max_sum)

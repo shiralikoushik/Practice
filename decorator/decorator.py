@@ -1,15 +1,19 @@
-
 ################## Function Decorator ###################
+
 
 def decortaor_method(original_func):
     def wrapper_method():
         print("I am a wrapper method")
-        return 
+        return
         original_func()
+
     return wrapper_method
+
+
 @decortaor_method
 def display():
     print("Hi I am a display method")
+
 
 # display = decortaor_method(display)
 

@@ -20,6 +20,7 @@ Output: 21
 
 """
 
+
 def rot(arr):
     li1 = list(str(arr))
     print(li1)
@@ -29,5 +30,6 @@ def rot(arr):
     else:
         in2 = int("".join(li1[::-1]))
         return in2
+
 
 print(rot(120))

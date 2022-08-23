@@ -24,10 +24,10 @@ if len(nums) != 1:
 if nums != []:
     li1.append([])
 
-#print(li1)
+# print(li1)
 for i in nums:
     for j in nums:
-        if (i != j) and ([i,j] not in li1) and ([j,i] not in li1):
-            li1.append([i,j])
+        if (i != j) and ([i, j] not in li1) and ([j, i] not in li1):
+            li1.append([i, j])
 
 print(li1)

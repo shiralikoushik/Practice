@@ -1,13 +1,10 @@
-dic1 = {
-        "pulto":"earth",
-        "earth":"world",
-        "world":"universe",
-        "universe":"pulto"
-}
+dic1 = {"pulto": "earth", "earth": "world", "world": "universe", "universe": "pulto"}
 
 s1 = "Sam on earth"
 s2 = "Sam in pulto"
-def eq(dic1,s1,s2):
+
+
+def eq(dic1, s1, s2):
     li1 = s1.split(" ")
     li2 = s2.split(" ")
 
@@ -18,14 +15,28 @@ def eq(dic1,s1,s2):
     else:
         for i in range(len(li1)):
             if li1[i] != li2[i]:
-                if li1[i].lower() not in dic1.keys() and li2[i].lower() not in dic1.keys():
+                if (
+                    li1[i].lower() not in dic1.keys()
+                    and li2[i].lower() not in dic1.keys()
+                ):
                     return False
-                elif (dic1.get(li1[i].lower()) == li2[i].lower()) or (dic1.get(li2[i].lower()) == li1[i].lower()):
+                elif (dic1.get(li1[i].lower()) == li2[i].lower()) or (
+                    dic1.get(li2[i].lower()) == li1[i].lower()
+                ):
                     return True
-                elif (li1[i].lower() not in dic1.keys() and li2[i].lower() not in dic1.values()) and (li2[i].lower() not in dic1.keys() and li1[i].lower() not in dic1.values()):
+                elif (
+                    li1[i].lower() not in dic1.keys()
+                    and li2[i].lower() not in dic1.values()
+                ) and (
+                    li2[i].lower() not in dic1.keys()
+                    and li1[i].lower() not in dic1.values()
+                ):
                     return False
                 else:
-                    if li1[i].lower() in dic1.keys() and li2[i].lower() in dic1.values():
+                    if (
+                        li1[i].lower() in dic1.keys()
+                        and li2[i].lower() in dic1.values()
+                    ):
                         x = li1[i].lower()
                         while x in dic1.keys():
                             if dic1[x].lower() == li2[i].lower():
@@ -38,8 +49,7 @@ def eq(dic1,s1,s2):
                             if dic1[x].lower() == li1[i].lower():
                                 return True
                             x = dic1[x].lower()
-                        return False                       
+                        return False
 
 
-print(eq(dic1,s1,s2))
-
+print(eq(dic1, s1, s2))

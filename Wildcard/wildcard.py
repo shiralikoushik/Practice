@@ -26,10 +26,10 @@ Explanation: '?' matches 'c', but the second letter is 'a', which does not match
 """
 
 
-def ismatch (s: str,p: str):
-    if len(s) != len(p) and '*' not in p:
-        return False 
-    elif '*' in p and len(p) == 1:
+def ismatch(s: str, p: str):
+    if len(s) != len(p) and "*" not in p:
+        return False
+    elif "*" in p and len(p) == 1:
         return True
 
     else:
@@ -40,5 +40,5 @@ def ismatch (s: str,p: str):
             i += 1
     return True
 
-print(ismatch("aa","a"))
-    
+
+print(ismatch("aa", "a"))

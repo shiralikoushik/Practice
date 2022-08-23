@@ -33,4 +33,3 @@ if counter:
     print(True)
 else:
     print(False)
-    

@@ -10,15 +10,14 @@ for i in range(len(x)):
         count += 1
     else:
         if count < 5 and count != 0:
-            y += "1"*count
+            y += "1" * count
         y += "0"
         count = 0
-    
+
     if count == 5:
         y += "1"
         count = 0
 if count < 5 and count != 0:
-    y += "1"*count
+    y += "1" * count
 
 print(y)
-

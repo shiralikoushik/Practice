@@ -26,6 +26,6 @@ for i in road:
         x += 1
 
 if x > 0:
-    print(count+1)
+    print(count + 1)
 else:
-    print(count)   
+    print(count)

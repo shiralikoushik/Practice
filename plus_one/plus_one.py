@@ -7,9 +7,9 @@ Thus, the result should be [1,2,4].
 
 """
 
-digits = [4,3,2,9]
-x = list(map(str,digits))
+digits = [4, 3, 2, 9]
+x = list(map(str, digits))
 y = "".join((x))
-s = int(y)+1
+s = int(y) + 1
 j = [i for i in str(s)]
 print(j)

@@ -1,5 +1,5 @@
-li1 = [1,2,3,4,5]
-#li1.reverse()
+li1 = [1, 2, 3, 4, 5]
+# li1.reverse()
 # print(li1)
 li2 = li1[::-1]
 # for i in reversed(range(len(li1))):

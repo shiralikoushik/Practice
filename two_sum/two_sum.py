@@ -21,14 +21,14 @@ Output: [0,1]
 
 """
 
-nums = [1,5,4,3,7,9,2]
+nums = [1, 5, 4, 3, 7, 9, 2]
 target = 0
 diff = 0
 x = []
 for i in range(len(nums)):
     diff = target - nums[i]
     if diff in nums and diff != nums[i]:
-        x = [i,nums.index(diff)]
+        x = [i, nums.index(diff)]
         break
 if x:
     print(x)

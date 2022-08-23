@@ -21,7 +21,9 @@ Output: -2
 Explanation: 7/-3 = -2.33333.. which is truncated to -2.
 
 """
-def div(dividend,divisor):
+
+
+def div(dividend, divisor):
     counter = 0
     c = 0
     if dividend < 0:
@@ -32,13 +34,14 @@ def div(dividend,divisor):
         b = -divisor
     else:
         b = divisor
-    while a>=b:
+    while a >= b:
         c = a - b
         a = c
         counter += 1
-    if (dividend < 0 or divisor < 0) and not(dividend < 0 and divisor < 0):
+    if (dividend < 0 or divisor < 0) and not (dividend < 0 and divisor < 0):
         return -counter
     else:
         return counter
 
-print(div(-36,12))
+
+print(div(-36, 12))

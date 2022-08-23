@@ -1,10 +1,11 @@
 from node_init import Node
 
+
 class BinaryTree:
-    def __ini__(self,head):
+    def __ini__(self, head):
         self.head = head
-    
-    def add(self,newnode):
+
+    def add(self, newnode):
         current_node = self.head
         while current_node:
             if newnode.value == current_node.value:
