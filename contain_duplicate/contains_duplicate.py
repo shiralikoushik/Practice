@@ -1,4 +1,4 @@
-""" Return true is a list contains duplicate else return false"""
+""" Return true if a list contains duplicate else return false"""
 
 nums = [1, 2, 4, 3, 3, 5]
 num2 = list(set(nums))

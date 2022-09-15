@@ -26,6 +26,7 @@ def allAnagram(input):
 
     # traverse dictionary and concatenate values
     # of keys together
+    print(dict)
     output = ""
     for key, value in dict.items():
         output = output + " ".join(value) + " "
@@ -37,3 +38,6 @@ def allAnagram(input):
 if __name__ == "__main__":
     input = ["cat", "dog", "tac", "god", "act"]
     print(allAnagram(input))
+
+
+

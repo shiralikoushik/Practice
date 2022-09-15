@@ -1,1 +1,1 @@
-Hi
+Hi this is example of context manager

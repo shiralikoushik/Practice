@@ -5,7 +5,7 @@ from fnmatch import fnmatch
 @contextmanager
 def open_file(f_name, mode):
     f = open(f_name, mode)
-    return f
+    yield f
     f.close()
 
 

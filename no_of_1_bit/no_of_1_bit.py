@@ -32,5 +32,6 @@ The input must be a binary string of length 32.
 """
 
 
-def hammingWeight(self, n: int) -> int:
-    return sum(b == "1" for b in bin(n))
+def hammingWeight(n):
+    print(sum(b == "1" for b in bin(n)))
+

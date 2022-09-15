@@ -8,8 +8,8 @@ def subtract_method(num1, num2):
 
 
 def multiplication_method(num1, num2):
-    num3 = 0
-    for i in range(num2):
+    num3 = num1
+    for i in range(num2-1):
         num3 = add_method(num1, num3)
     return num3
 
@@ -26,4 +26,4 @@ def division_method(num1, num2):
     return counter, reminder
 
 
-print(division_method(10, 3))
+print(multiplication_method(2, 3))

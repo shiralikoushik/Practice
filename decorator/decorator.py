@@ -2,22 +2,21 @@
 
 
 def decortaor_method(original_func):
-    def wrapper_method():
-        print("I am a wrapper method")
-        return
-        original_func()
+    def wrapper_method(*args,**kwargs):
+        print("Koushik")
+        return original_func(*args,**kwargs)
 
     return wrapper_method
 
 
 @decortaor_method
-def display():
-    print("Hi I am a display method")
+def display(name):
+    print(name)
 
 
 # display = decortaor_method(display)
 
-display()
+display("Shirali")
 
 ################## Class Decorator ######################
 

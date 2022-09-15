@@ -17,17 +17,15 @@ Output: [[],[0]]
 """
 
 
-nums = []
-li1 = [[i] for i in nums]
-if len(nums) != 1:
-    li1.append(nums[:])
-if nums != []:
-    li1.append([])
+def subsets(nums):
+    n = len(nums)
+    output = [[]]
+    for num in nums:
+        output += [curr + [num] for curr in output]
 
-# print(li1)
-for i in nums:
-    for j in nums:
-        if (i != j) and ([i, j] not in li1) and ([j, i] not in li1):
-            li1.append([i, j])
+    return output
 
-print(li1)
+print(subsets([1,2,3,4]))
+
+#[[],[1]]
+#[[],[1],[2],[1,2]

@@ -1,7 +1,7 @@
-dic1 = {"pulto": "earth", "earth": "world", "world": "universe", "universe": "pulto"}
+dic1 = {"pluto": "earth", "earth": "world", "world": "universe", "universe": "pluto"}
 
 s1 = "Sam on earth"
-s2 = "Sam in pulto"
+s2 = "Sam on pluto"
 
 
 def eq(dic1, s1, s2):

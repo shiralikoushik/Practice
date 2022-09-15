@@ -19,7 +19,7 @@ Explanation: There is no common prefix among the input strings.
 """
 
 
-strs = ["flower", "flow", "flight"]
+strs = ["flower","flow","flight"]
 x = ""
 y = []
 for idx, i in enumerate(zip(*strs)):
@@ -27,7 +27,6 @@ for idx, i in enumerate(zip(*strs)):
         x += strs[0][idx]
         y.append(x)
     else:
-
         x = ""
 if y:
     print(max(y))

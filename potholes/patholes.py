@@ -1,6 +1,6 @@
 """
 Road n segments 
-pathole - 'x' good segments - '.'
+pathole -> 'x' ,good segments -> '.'
 at a  time road filling machine can patch 3 segments. find the minimum number of patches required 
 to repair the patholes in the road
 
